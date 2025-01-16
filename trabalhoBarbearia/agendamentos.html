@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Agendamentos - O Rei do Picote</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <nav class="menu">
+
+    <button id="menuToggle">☰ Menu</button>
+
+    <ul id="menuList">
+
+      <li><a href="home.html">Serviços</a></li>
+      <li><a href="agendamentos.html">Agendamentos</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="equipe.html">Equipe</a></li>
+      <li><a href="historico.html">Histórico</a></li>
+      
+    </ul>
+
+  </nav>
+
+  <div class="contai">
+
+    <h2>Agende Seu Serviço: </h2>
+
+    <form id="agendamentoForm">
+
+      <label for="data">Data:</label>
+      <input type="date" id="data" required>
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" required>
+
+      <label for="servico">Serviço:</label>
+      <select id="servico" required>
+
+        <option value="Corte de cabelo">Corte de cabelo</option>
+        <option value="Corte de barba">Corte de barba</option>
+        <option value="Sobrancelha">Sobrancelha</option>
+        <option value="Maquiagem">Maquiagem</option>
+        <option value="Penteado">Penteado</option>
+
+      </select>
+
+      <button type="submit">Agendar</button>
+
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
